@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>DodoCoding - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CodingJourney.css">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+</head>
+<body>
+    <input type="checkbox" id="menuToggle" hidden>
+    <div class="TopBar">
+        <div class="TopDiv">
+            <label for="menuToggle" class="Menu" style="cursor: pointer;">   
+                <div class="MenuBar edge"></div>
+                <div class="MenuBar middle"></div>
+                <div class="MenuBar edge"></div>
+            </label>
+        </div>
+
+        <img class="BarLogo" src="Icons/Logos/WhiteDodo.svg" draggable="false" onclick="transitionTo('index.html')"/>
+        
+        <div class="TopDiv">
+            <a onclick="transitionTo('Contact.html')">Contact Me</a>
+        </div>
+        
+        <div class="LoadTransition" id="loader"></div>
+        
+        <div class="SideMenu">
+            <div class="ButtonDiv">
+            <button class="PageOptions" onclick="transitionTo('index.html')"> Home </button>
+            <button class="PageOptions" onclick="transitionTo('About me.html')"> About me</button>
+            <button class="PageOptions" onclick="transitionTo('Offers & Pricing.html')"> Offers & Pricing</button>
+            <button class="PageOptions" onclick="transitionTo('CodingJourney.html')"> Coding Journey </button>
+            <button class="PageOptions" onclick="transitionTo('Projects.html')"> Project List </button>
+            <button class="PageOptions" onclick="transitionTo('Contact.html')"> Contacts </button>
+            </div>
+        </div>
+    </div>
+    <!-- <button class="centers"  onclick="spawnDivs()"></button> -->
+    <div class="Title">CodingDodo</div>
+
+    <div class="CategoryTitle">Coding Journey</div>
+
+    <div class = "Line"> </div>
+    <!-- <div class="LoadTransition" id="loader"></div> -->
+
+    <div class = "CodingGrid">
+        <div class="XLine"></div>
+        <div class="YLine"></div>
+        <div class="GridText"><p>2021 : I actually started "programming" around 4 years ago in scratch!
+        I was just making stupid little games for fun to be totally honest.</p></div>
+        <img class="GridImage" src="Pictures/codingJourney/scratch.png" draggable="false"></img>
+            <div class="XLine"></div>
+        <div class="YLine"></div>
+        <div class="GridText"><p>  2021-2022  : Around the same time, I started learning unity, 
+        but I had no experience in programming so I had a harsh time. </p></div>
+        <img class="GridImage" src="Pictures/codingJourney/unity-1.png" draggable="false"></img>
+        <div class="XLine"></div>
+        <div class="YLine"></div>
+        <div class="GridText"><p>2023   :  After the past years, I actually started to understanding unity, but 
+        I decided to return to the basics and make simple c# and lua programs, like brute forcers or encrypters.
+        </p></div>
+        <img class="GridImage" src="Pictures/codingJourney/unity1.png"  draggable="false"></img>
+                <div class="XLine"></div>
+        <div class="YLine"></div>
+        <div class="GridText"><p>2024   :  That's when things clicked. I started working on multiple projects and I understood pretty much
+        everything, though my organisation was bad, so I couldn't continue the projects.
+        </p></div>
+       <img class="GridImage" src="Pictures/codingJourney/unity2.png" draggable="false"></img>
+        <div class="XLine"></div>
+        <div class="YLine"></div>
+        <div class="GridText"><p> 2025/Now   :  I had a lot of time to work on structure, now I'm working on multiple projects and 
+        trying to sell assets to help other people! I have improved a LOT through out the years and now I consider myself good enough to 
+        sell assets!
+        </p></div>
+        <img class="GridImage" src="Pictures/codingJourney/now.png" draggable="false" ></img>
+        
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+</html>

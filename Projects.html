@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>DodoCoding - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Projects.css">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+</head>
+<body>
+    <input type="checkbox" id="menuToggle" hidden>
+    <div class="TopBar">
+        <div class="TopDiv">
+            <label for="menuToggle" class="Menu" style="cursor: pointer;">   
+                <div class="MenuBar edge"></div>
+                <div class="MenuBar middle"></div>
+                <div class="MenuBar edge"></div>
+            </label>
+        </div>
+
+        <img class="BarLogo" src="Icons/Logos/WhiteDodo.svg" draggable="false" onclick="transitionTo('index.html')"/>
+        
+        <div class="TopDiv">
+            <a onclick="transitionTo('Contact.html')">Contact Me</a>
+        </div>
+        
+        <div class="LoadTransition" id="loader"></div>
+        
+        <div class="SideMenu">
+            <div class="ButtonDiv">
+            <button class="PageOptions" onclick="transitionTo('index.html')"> Home </button>
+            <button class="PageOptions" onclick="transitionTo('About me.html')"> About me</button>
+            <button class="PageOptions" onclick="transitionTo('Offers & Pricing.html')"> Offers & Pricing</button>
+            <button class="PageOptions" onclick="transitionTo('CodingJourney.html')"> Coding Journey </button>
+            <button class="PageOptions" onclick="transitionTo('Projects.html')"> Project List </button>
+            <button class="PageOptions" onclick="transitionTo('Contact.html')"> Contacts </button>
+            </div>
+        </div>
+    </div>
+    <!-- <button class="centers"  onclick="spawnDivs()"></button> -->
+    <div class="Title">CodingDodo</div>
+
+    <div class="CategoryTitle">Projects</div>
+
+    <div class = "Line"> </div>
+
+    <div class = "ProjectContainer">
+        <div class = "header">MARCHING SQUARE</div>
+        <img class = "menu" src = "Pictures/Projects/Marching.png"></img>
+        <div class = "content">
+            <p>
+                A marching square algorithm asset 
+                with procedural generation integrated!
+                Can be used for cave generate and 100% customizable.
+            </p>
+        </div>
+    </div>
+    <div class = "ProjectContainer">
+        <div class = "header">PROCEDURAL ANIMATION</div>
+        <img class = "menu" src = "Pictures/Projects/Spider.png"></img>
+        <div class = "content">
+            <p>
+                Gives walking animation to any model adapting to terrain in real time!
+            </p>
+        </div>
+    </div>
+    
+    
+    <!-- <div class="LoadTransition" id="loader"></div> -->
+
+    <script src="script.js"> </script>
+</body>
+</html>
